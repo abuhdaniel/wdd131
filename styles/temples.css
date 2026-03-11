@@ -16,6 +16,11 @@ border:none;
 color:white;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+}
+
 .navigation{
 display:none;
 list-style:none;
