@@ -1,0 +1,53 @@
+:root {
+--main-color: green;
+--secondary-color: white;
+--accent-color: #e6f2e6;
+}
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:var(--accent-color);
+}
+
+header{
+background:var(--main-color);
+color:white;
+text-align:center;
+padding:1rem;
+}
+
+main{
+max-width:900px;
+margin:auto;
+padding:1rem;
+}
+
+picture img{
+width:100%;
+height:auto;
+}
+
+.weather h2::after{
+content:" ⛅";
+}
+
+footer{
+text-align:center;
+padding:1rem;
+background:#222;
+color:white;
+margin-top:20px;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width:700px){
+
+main{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+}

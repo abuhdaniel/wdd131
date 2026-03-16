@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Country Page</title>
+
+<link rel="stylesheet" href="styles/place.css">
+<script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Nigeria</h1>
+</header>
+
+<main>
+
+<!-- HERO IMAGE -->
+<picture>
+<source srcset="images/hero-small.webp" media="(max-width: 500px)">
+<source srcset="images/hero-medium.webp" media="(max-width: 900px)">
+<img src="images/hero-large.webp" alt="Beautiful view of Nigeria">
+</picture>
+
+<section>
+<h2>About Nigeria</h2>
+<p>
+Nigeria is a country in West Africa known for its diverse culture,
+large population, and rich natural resources. It is home to many
+ethnic groups and languages.
+</p>
+</section>
+
+<section class="weather">
+<h2>Weather</h2>
+
+<p>Temperature: <span id="temp">8</span> °C</p>
+<p>Wind Speed: <span id="speed">10</span> km/h</p>
+<p>Wind Chill: <span id="windchill"></span></p>
+
+</section>
+
+</main>
+
+<footer>
+<p>&copy; <span id="year"></span> | Last Modified: <span id="modified"></span></p>
+</footer>
+
+</body>
+</html>
