@@ -3,50 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Country Page</title>
+
+<title>Nigeria - Country Page</title>
+<meta name="description" content="Explore Nigeria, its culture, weather, and beautiful places.">
 
 <link rel="stylesheet" href="styles/place.css">
 <script src="scripts/place.js" defer></script>
-
 </head>
 
 <body>
 
 <header>
-<h1>Nigeria</h1>
+  <h1>Nigeria</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="place.html">Place</a>
+  </nav>
 </header>
 
 <main>
 
-<!-- HERO IMAGE -->
-<picture>
-<source srcset="images/hero-small.webp" media="(max-width: 500px)">
-<source srcset="images/hero-medium.webp" media="(max-width: 900px)">
-<img src="images/hero-large.webp" alt="Beautiful view of Nigeria">
-</picture>
+  <!-- HERO IMAGE (WebP + srcset ✅) -->
+  <picture>
+    <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+    <source srcset="images/hero-medium.webp" media="(max-width: 900px)">
+    <img src="images/hero-large.webp" alt="Beautiful landscape of Nigeria">
+  </picture>
 
-<section>
-<h2>About Nigeria</h2>
-<p>
-Nigeria is a country in West Africa known for its diverse culture,
-large population, and rich natural resources. It is home to many
-ethnic groups and languages.
-</p>
-</section>
+  <!-- ABOUT -->
+  <section>
+    <h2>About Nigeria</h2>
+    <p>
+      Nigeria is a country in West Africa known for its diverse culture,
+      large population, and rich natural resources. It is home to many
+      ethnic groups and languages.
+    </p>
+  </section>
 
-<section class="weather">
-<h2>Weather</h2>
+  <!-- CULTURE -->
+  <section>
+    <h2>Culture</h2>
+    <p>
+      Nigeria has a vibrant culture with music, food, and festivals.
+      Popular dishes include jollof rice, and Afrobeats music is globally recognized.
+    </p>
+  </section>
 
-<p>Temperature: <span id="temp">8</span> °C</p>
-<p>Wind Speed: <span id="speed">10</span> km/h</p>
-<p>Wind Chill: <span id="windchill"></span></p>
+  <!-- WEATHER -->
+  <section class="weather">
+    <h2>Weather</h2>
 
-</section>
+    <!-- SVG (Mobile Only ✅) -->
+    <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+    <p>Temperature: <span id="temp">30</span> °C</p>
+    <p>Wind Speed: <span id="speed">10</span> km/h</p>
+    <p>Wind Chill: <span id="windchill"></span></p>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <img src="images/lagos.webp" alt="Lagos skyline">
+    <img src="images/abuja.webp" alt="Abuja city">
+    <img src="images/culture.webp" alt="Nigerian cultural festival">
+  </section>
 
 </main>
 
 <footer>
-<p>&copy; <span id="year"></span> | Last Modified: <span id="modified"></span></p>
+  <p>&copy; <span id="year"></span> | Last Modified: <span id="modified"></span></p>
 </footer>
 
 </body>

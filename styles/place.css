@@ -1,53 +1,114 @@
 :root {
---main-color: green;
---secondary-color: white;
---accent-color: #e6f2e6;
+  --main-color: green;
+  --secondary-color: white;
+  --accent-color: #e6f2e6;
 }
 
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:var(--accent-color);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--accent-color);
 }
 
-header{
-background:var(--main-color);
-color:white;
-text-align:center;
-padding:1rem;
+/* HEADER */
+header {
+  background: var(--main-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-main{
-max-width:900px;
-margin:auto;
-padding:1rem;
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-picture img{
-width:100%;
-height:auto;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.weather h2::after{
-content:" ⛅";
+/* MAIN */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
 }
 
-footer{
-text-align:center;
-padding:1rem;
-background:#222;
-color:white;
-margin-top:20px;
+/* HERO */
+picture img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-/* MEDIA QUERY */
-
-@media (min-width:700px){
-
-main{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
+/* SECTIONS */
+section {
+  background: white;
+  padding: 1rem;
+  margin-top: 15px;
+  border-radius: 10px;
 }
 
+/* SVG WEATHER ICON (mobile only) */
+.weather-icon {
+  width: 40px;
+}
+
+/* Hide SVG on desktop */
+@media (min-width: 700px) {
+  .weather-icon {
+    display: none;
+  }
+}
+
+/* PSEUDO ELEMENT (desktop only ✅) */
+.weather h2::after {
+  content: "";
+}
+
+@media (min-width: 700px) {
+  .weather h2::after {
+    content: " ⛅";
+  }
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE LAYOUT */
+@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  picture {
+    grid-column: 1 / -1;
+  }
+
+  .gallery {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
