@@ -72,3 +72,27 @@ const temples = [
     image: "https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple.jpg"
   }
 ];
+document.getElementById("home").addEventListener("click", function (e) {
+  e.preventDefault();
+  filterTemples("all");
+});
+
+document.getElementById("old").addEventListener("click", function (e) {
+  e.preventDefault();
+  filterTemples("old");
+});
+
+document.getElementById("new").addEventListener("click", function (e) {
+  e.preventDefault();
+  filterTemples("new");
+});
+
+document.getElementById("large").addEventListener("click", function (e) {
+  e.preventDefault();
+  filterTemples("large");
+});
+
+document.getElementById("small").addEventListener("click", function (e) {
+  e.preventDefault();
+  filterTemples("small");
+});
