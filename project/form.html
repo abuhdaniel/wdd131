@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Review Form</title>
+
+<meta name="description" content="Submit a product review for construction tools and equipment.">
+<meta name="author" content="Abuh Daniel">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/form.css">
+<script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+<header>
+<h1>🏗️ Product Review Form</h1>
+</header>
+
+<main>
+
+<form method="get" action="review.html">
+
+<!-- Product -->
+<label for="product">Product Name *</label>
+<select id="product" name="product" required>
+<option value="" disabled selected>Select a Product ...</option>
+</select>
+
+<!-- Rating -->
+<fieldset>
+<legend>Overall Rating *</legend>
+
+<label><input type="radio" name="rating" value="1" required> ☆</label>
+<label><input type="radio" name="rating" value="2"> ☆☆</label>
+<label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+<label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+<label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+
+</fieldset>
+
+<!-- Date -->
+<label for="date">Date of Installation *</label>
+<input type="date" id="date" name="date" required>
+
+<!-- Features -->
+<fieldset>
+<legend>Useful Features</legend>
+
+<label><input type="checkbox" name="features" value="Durability"> Durability</label>
+<label><input type="checkbox" name="features" value="Efficiency"> Efficiency</label>
+<label><input type="checkbox" name="features" value="Safety"> Safety</label>
+
+</fieldset>
+
+<!-- Review -->
+<label for="review">Written Review</label>
+<textarea id="review" name="review"></textarea>
+
+<!-- Username -->
+<label for="username">Your Name</label>
+<input type="text" id="username" name="username">
+
+<input type="submit" value="Submit Review">
+
+</form>
+
+</main>
+
+<footer>
+<p>&copy; 2026 BuildRight Construction</p>
+</footer>
+
+</body>
+</html>
