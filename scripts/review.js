@@ -1,5 +1,20 @@
-let count = localStorage.getItem("reviews") || 0;
-count++;
-localStorage.setItem("reviews", count);
+// Get current count or set to 0
+let count = localStorage.getItem("reviewCount");
 
-document.getElementById("counter").textContent = count;
+if (!count) {
+    count = 0;
+}
+
+// Increase count
+count++;
+
+// Save back to localStorage
+localStorage.setItem("reviewCount", count);
+
+// Display on page
+document.addEventListener("DOMContentLoaded", () => {
+    const counter = document.querySelector("#counter");
+    if (counter) {
+        counter.textContent = count;
+    }
+});
