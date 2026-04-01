@@ -18,7 +18,7 @@ const temples = [
     location: "Accra, Ghana",
     dedicated: "2004",
     area: 17500,
-    image: "aba.jpg"
+    image: "images/aba.jpg"
   },
   {
     name: "Aba Nigeria Temple",
