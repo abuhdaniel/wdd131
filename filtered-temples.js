@@ -4,7 +4,7 @@ const temples = [
     location: "Salt Lake City, USA",
     dedicated: "1893",
     area: 253000,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Salt_Lake_Temple%2C_Utah_-_Sept_2004-2.jpg/800px-Salt_Lake_Temple%2C_Utah_-_Sept_2004-2.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/89/Salt_Lake_Temple%2C_Utah_-_Sept_2004-2.jpg"
   },
   {
     name: "Laie Hawaii Temple",
@@ -18,7 +18,7 @@ const temples = [
     location: "Accra, Ghana",
     dedicated: "2004",
     area: 17500,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Accra_Ghana_Temple.jpg/800px-Accra_Ghana_Temple.jpg"
+    image: "aba.jpg"
   },
   {
     name: "Aba Nigeria Temple",
